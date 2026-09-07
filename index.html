@@ -5,61 +5,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A² Industrial Cleaning Services - Above & Beyond Clean</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+  *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;scroll-behavior:smooth;}
   :root{
     --navy:#0A2540;
     --orange:#FF6A00;
+    --orange-light:#FF8C33;
+    --green:#00C851;
     --gray:#4A5568;
     --light:#F7FAFC;
+    --white:#FFFFFF;
   }
-  body{color:var(--gray);line-height:1.6;}
-  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  body{color:var(--gray);line-height:1.6;background:var(--white);}
+  .container{max-width:1200px;margin:0 auto;padding:0 20px;}
   
-  header{background:var(--navy);color:white;padding:12px 0;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.2);}
+  /* HEADER */
+  header{background:linear-gradient(90deg, var(--navy) 0%, #123A5E 100%);color:white;padding:15px 0;position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,0.3);}
   nav{display:flex;justify-content:space-between;align-items:center;}
-  .logo{display:flex;align-items:center;gap:12px;font-size:1.5rem;font-weight:900;text-decoration:none;color:white;}
-  .logo img{height:45px;width:auto;border-radius:6px;background:white;padding:3px;}
+  .logo{display:flex;align-items:center;gap:12px;font-size:1.6rem;font-weight:900;text-decoration:none;color:white;}
+  .logo img{height:50px;width:auto;border-radius:8px;background:white;padding:4px;box-shadow:0 0 10px rgba(255,106,0,0.4);}
   .logo span{color:var(--orange);}
-  nav ul{display:flex;list-style:none;gap:25px;}
-  nav a{color:white;text-decoration:none;font-weight:500;}
-  nav a:hover{color:var(--orange);}
-  
-  .hero{background:linear-gradient(rgba(10,37,64,0.85),rgba(10,37,64,0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070') center/cover; color:white;padding:120px 0;text-align:center;}
-  .hero h1{font-size:3rem;margin-bottom:15px;}
-  .hero h1 span{color:var(--orange);}
-  .hero p{font-size:1.2rem;margin-bottom:30px;}
-  .btn{background:var(--orange);color:white;padding:14px 28px;border:none;border-radius:6px;font-weight:700;text-decoration:none;display:inline-block;margin:5px;cursor:pointer;}
-  .btn:hover{background:#e55f00;}
-  .btn-outline{background:transparent;border:2px solid white;}
-  
-  section{padding:80px 0;}
-  .section-title{text-align:center;font-size:2.2rem;color:var(--navy);margin-bottom:50px;}
-  
-  .services{background:var(--light);}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
-  .card{background:white;padding:30px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.08);border-top:4px solid var(--orange);}
-  .card h3{color:var(--navy);margin-bottom:10px;}
-  
-  .why .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
-  .why-item{text-align:center;padding:20px;}
-  .why-item .icon{font-size:2.5rem;margin-bottom:10px;}
+  nav ul{display:flex;list-style:none;gap:20px;align-items:center;}
+  nav a{color:white;text-decoration:none;font-weight:600;transition:0.3s;}
+  nav a:hover{color:var(--orange);transform:translateY(-2px);}
+  .btn-nav{background:linear-gradient(90deg, var(--orange) 0%, var(--orange-light) 100%);padding:10px 20px;border-radius:25px;color:white !important;}
+  .btn-nav:hover{background:var(--orange-light);box-shadow:0 4px 12px rgba(255,106,0,0.4);}
+  .btn-green{background:var(--green);padding:10px 20px;border-radius:25px;color:white !important;}
+  .btn-green:hover{background:#00b347;box-shadow:0 4px 12px rgba(0,200,81,0.4);}
 
-  .careers{background:var(--light);}
-  .careers-box{max-width:800px;margin:auto;background:white;padding:40px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+  /* HERO */
+  .hero{background:linear-gradient(135deg, rgba(10,37,64,0.9) 0%, rgba(255,106,0,0.8) 100%), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070') center/cover; color:white;padding:140px 0;text-align:center;}
+  .hero h1{font-size:3.2rem;margin-bottom:15px;text-shadow:2px 2px 8px rgba(0,0,0,0.5);}
+  .hero h1 span{color:var(--orange-light);}
+  .hero p{font-size:1.3rem;margin-bottom:35px;}
+  .btn{background:linear-gradient(90deg, var(--orange) 0%, var(--orange-light) 100%);color:white;padding:16px 32px;border:none;border-radius:30px;font-weight:800;text-decoration:none;display:inline-block;margin:8px;cursor:pointer;transition:0.3s;box-shadow:0 6px 15px rgba(255,106,0,0.4);}
+  .btn:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(255,106,0,0.6);}
+  .btn-outline{background:transparent;border:3px solid white;}
+  .btn-outline:hover{background:white;color:var(--navy);}
+  .btn-green{background:linear-gradient(90deg, var(--green) 0%, #00e65c 100%);}
+
+  /* SECTIONS */
+  section{padding:90px 0;}
+  .section-title{text-align:center;font-size:2.5rem;color:var(--navy);margin-bottom:50px;font-weight:900;}
+  .section-title span{color:var(--orange);}
   
-  .contact{background:var(--navy);color:white;}
-  form{display:grid;gap:15px;max-width:600px;margin:0 auto;}
-  input,textarea{padding:12px;border-radius:6px;border:none;width:100%;}
-  .contact-info{text-align:center;margin-bottom:30px;font-size:1.1rem;}
-  .contact-info a{color:var(--orange);text-decoration:none;font-weight:700;}
+  .services{background:linear-gradient(180deg, var(--light) 0%, #E6F0FF 100%);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
+  .card{background:white;padding:35px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);border-top:5px solid var(--orange);transition:0.3s;}
+  .card:hover{transform:translateY(-8px);box-shadow:0 15px 30px rgba(255,106,0,0.2);}
+  .card h3{color:var(--navy);margin-bottom:12px;font-size:1.3rem;}
+  .card-icon{font-size:2.5rem;margin-bottom:15px;}
   
-  footer{background:#061a2e;color:#ccc;text-align:center;padding:25px 0;}
+  .why .grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+  .why-item{text-align:center;padding:25px;background:white;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08);}
+  .why-item .icon{font-size:3rem;margin-bottom:15px;background:linear-gradient(135deg, var(--orange), var(--navy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+
+  .careers{background:linear-gradient(135deg, var(--navy) 0%, #123A5E 100%);color:white;}
+  .careers-box{max-width:800px;margin:auto;background:white;padding:50px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.3);color:var(--gray);}
+  
+  .contact{background:linear-gradient(135deg, var(--orange) 0%, #e55f00 100%);color:white;}
+  form{display:grid;gap:15px;max-width:650px;margin:0 auto;}
+  input,textarea{padding:14px;border-radius:8px;border:2px solid transparent;width:100%;font-size:1rem;}
+  input:focus,textarea:focus{outline:none;border-color:var(--navy);}
+  .contact-info{text-align:center;margin-bottom:30px;font-size:1.2rem;}
+  .contact-info a{color:white;text-decoration:none;font-weight:800;background:rgba(10,37,64,0.3);padding:8px 15px;border-radius:20px;}
+  
+  footer{background:#061a2e;color:#ccc;text-align:center;padding:30px 0;}
+  .floating-btn{position:fixed;bottom:25px;right:25px;z-index:999;background:var(--green);color:white;padding:15px 20px;border-radius:50px;font-weight:800;text-decoration:none;box-shadow:0 6px 20px rgba(0,200,81,0.5);}
+  .floating-btn:hover{background:#00b347;}
   
   @media(max-width:768px){
-    .hero h1{font-size:2rem;}
-    nav ul{gap:12px;font-size:14px;}
-    .logo{font-size:1.2rem;}
-    .logo img{height:38px;}
+    .hero h1{font-size:2.2rem;}
+    nav ul{display:none;}
+    .logo{font-size:1.3rem;}
+    .logo img{height:42px;}
   }
 </style>
 </head>
@@ -72,13 +90,13 @@
         <img src="photoo.jpg" alt="A² Logo">
         A<span>²</span> Industrial
       </a>
-       
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#why">Why Us</a></li>
         <li><a href="#careers">Careers</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="EMPFORM.html" style="background:var(--orange);padding:8px 14px;border-radius:6px;">Apply Now</a></li>
+        <li><a href="EMPFORM.html" class="btn-nav">Apply Now</a></li>
+        <li><a href="https://wa.me/2347031257305" class="btn-green">WhatsApp</a></li>
       </ul>
     </nav>
   </div>
@@ -89,29 +107,29 @@
     <h1>A<span>²</span> INDUSTRIAL CLEANING SERVICES</h1>
     <p><b>Above & Beyond Clean</b></p>
     <p>We keep factories, warehouses & plants spotless, safe, and HSE compliant.</p>
-    <a href="https://wa.me/2347031257305" class="btn">Chat on WhatsApp</a>
-    <a href="#contact" class="btn btn-outline">Get Free Quote</a>
-    <a href="EMPFORM.html" class="btn">Join Our Team</a>
+    <a href="https://wa.me/2347031257305" class="btn btn-green">💬 Chat on WhatsApp</a>
+    <a href="#contact" class="btn btn-outline">📋 Get Free Quote</a>
+    <a href="EMPFORM.html" class="btn">👷 Join Our Team</a>
   </div>
 </section>
 
 <section id="services" class="services">
   <div class="container">
-    <h2 class="section-title">Our Services</h2>
+    <h2 class="section-title">Our <span>Services</span></h2>
     <div class="grid">
-      <div class="card"><h3>Heavy Industrial Cleaning</h3><p>Plants, refineries, and warehouse deep cleaning with industrial equipment.</p></div>
-      <div class="card"><h3>Floor Care & Degreasing</h3><p>Epoxy, concrete polishing, oil/grease removal for safety and compliance.</p></div>
-      <div class="card"><h3>Tank & Confined Space</h3><p>Certified team for silos, tanks, and hazardous area cleaning.</p></div>
-      <div class="card"><h3>Post-Construction Clean-up</h3><p>Debris removal and final cleaning for new industrial facilities.</p></div>
-      <div class="card"><h3>Sanitization & HSE</h3><p>Eco-friendly chemicals and full compliance with safety standards.</p></div>
-      <div class="card"><h3>24/7 Emergency Response</h3><p>Spill control and urgent cleaning, anytime, anywhere.</p></div>
+      <div class="card"><div class="card-icon">🏭</div><h3>Heavy Industrial Cleaning</h3><p>Plants, refineries, and warehouse deep cleaning with industrial equipment.</p></div>
+      <div class="card"><div class="card-icon">🧽</div><h3>Floor Care & Degreasing</h3><p>Epoxy, concrete polishing, oil/grease removal for safety and compliance.</p></div>
+      <div class="card"><div class="card-icon">⚠️</div><h3>Tank & Confined Space</h3><p>Certified team for silos, tanks, and hazardous area cleaning.</p></div>
+      <div class="card"><div class="card-icon">🚧</div><h3>Post-Construction Clean-up</h3><p>Debris removal and final cleaning for new industrial facilities.</p></div>
+      <div class="card"><div class="card-icon">🌿</div><h3>Sanitization & HSE</h3><p>Eco-friendly chemicals and full compliance with safety standards.</p></div>
+      <div class="card"><div class="card-icon">🚨</div><h3>24/7 Emergency Response</h3><p>Spill control and urgent cleaning, anytime, anywhere.</p></div>
     </div>
   </div>
 </section>
 
 <section id="why" class="why">
   <div class="container">
-    <h2 class="section-title">Why Choose A²</h2>
+    <h2 class="section-title">Why Choose <span>A²</span></h2>
     <div class="grid">
       <div class="why-item"><div class="icon">👷</div><h3>Certified Team</h3><p>Trained, PPE-compliant professionals</p></div>
       <div class="why-item"><div class="icon">⚙️</div><h3>Industrial Equipment</h3><p>Heavy-duty scrubbers & pressure washers</p></div>
@@ -124,18 +142,18 @@
 <section id="careers" class="careers">
   <div class="container">
     <div class="careers-box">
-      <h2 class="section-title">Join the A² Team</h2>
-      <p style="text-align:center;margin-bottom:20px;">We're hiring! Click below to fill our employment application form.</p>
-      <a href="A² EMPL.html" class="btn" style="display:block;text-align:center;">Start Application</a>
+      <h2 class="section-title" style="color:var(--navy);">Join the A² Team</h2>
+      <p style="text-align:center;margin-bottom:25px;font-size:1.1rem;">We're hiring Industrial Cleaners, Supervisors & Drivers. Good pay + PPE provided.</p>
+      <a href="EMPFORM.html" class="btn" style="display:block;text-align:center;">Start Application</a>
     </div>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="container">
-    <h2 class="section-title" style="color:white;">Get a Quote</h2>
+    <h2 class="section-title" style="color:white;">Get a <span style="color:var(--navy);">Free Quote</span></h2>
     <div class="contact-info">
-      📞 WhatsApp: <a href="https://wa.me/2347031257305">+234 703 125 7305</a> <br>
+      📞 WhatsApp: <a href="https://wa.me/2347031257305">+234 703 125 7305</a> <br><br>
       📧 Email: <a href="mailto:akoralexander9@gmail.com">akoralexander9@gmail.com</a>
     </div>
     <form onsubmit="window.open('https://wa.me/2347031257305?text=Hello A², I need a cleaning quote for my facility.');return false;">
@@ -144,7 +162,7 @@
       <input type="tel" placeholder="Phone Number" required>
       <input type="text" placeholder="Location - e.g. Abuja" required>
       <textarea rows="4" placeholder="Tell us about your facility and cleaning needs"></textarea>
-      <button class="btn" type="submit">Send via WhatsApp</button>
+      <button class="btn btn-green" type="submit">Send via WhatsApp</button>
     </form>
   </div>
 </section>
@@ -155,6 +173,9 @@
     <p>Email: <a href="mailto:akoralexander9@gmail.com" style="color:var(--orange);">akoralexander9@gmail.com</a> | WhatsApp: <a href="https://wa.me/2347031257305" style="color:var(--orange);">+234 703 125 7305</a></p>
   </div>
 </footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/2347031257305" class="floating-btn">💬 WhatsApp Us</a>
 
 </body>
 </html>
