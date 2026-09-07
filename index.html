@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=4.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A² Industrial Cleaning Services - Above & Beyond Clean</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
@@ -43,6 +43,9 @@
   .why .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
   .why-item{text-align:center;padding:20px;}
   .why-item .icon{font-size:2.5rem;margin-bottom:10px;}
+
+  .careers{background:var(--light);}
+  .careers-box{max-width:800px;margin:auto;background:white;padding:40px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
   
   .contact{background:var(--navy);color:white;}
   form{display:grid;gap:15px;max-width:600px;margin:0 auto;}
@@ -54,7 +57,7 @@
   
   @media(max-width:768px){
     .hero h1{font-size:2rem;}
-    nav ul{display:none;}
+    nav ul{gap:12px;font-size:14px;}
     .logo{font-size:1.2rem;}
     .logo img{height:38px;}
   }
@@ -65,24 +68,20 @@
 <header>
   <div class="container">
     <nav>
-
-
-<a href="#" class="logo">
-  <img src="photoo.jpg" alt="A² Logo" style="height:100px;width:auto;border-radius:12px;background:white;padding:3px;">
-  A<span>²</span> Industrial
-</a>
-       
+      <a href="#" class="logo">
+        <img src="photoo.jpg" alt="A² Logo">
+        A<span>²</span> Industrial
+      </a>
        
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#why">Why Us</a></li>
+        <li><a href="#careers">Careers</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="A² EMPL.html" style="background:var(--orange);padding:8px 14px;border-radius:6px;">Apply Now</a></li>
       </ul>
     </nav>
   </div>
-
-               <form action=" A² EMPL.html" method="POST" enctype="multipart/form-data">
- 
 </header>
 
 <section class="hero">
@@ -92,6 +91,7 @@
     <p>We keep factories, warehouses & plants spotless, safe, and HSE compliant.</p>
     <a href="https://wa.me/2347031257305" class="btn">Chat on WhatsApp</a>
     <a href="#contact" class="btn btn-outline">Get Free Quote</a>
+    <a href="A² EMPL.html" class="btn">Join Our Team</a>
   </div>
 </section>
 
@@ -117,6 +117,16 @@
       <div class="why-item"><div class="icon">⚙️</div><h3>Industrial Equipment</h3><p>Heavy-duty scrubbers & pressure washers</p></div>
       <div class="why-item"><div class="icon">🌿</div><h3>Eco-Safe</h3><p>Non-toxic, biodegradable chemicals</p></div>
       <div class="why-item"><div class="icon">📍</div><h3>Nationwide</h3><p>Based in Abuja. Serving Nigeria</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="careers" class="careers">
+  <div class="container">
+    <div class="careers-box">
+      <h2 class="section-title">Join the A² Team</h2>
+      <p style="text-align:center;margin-bottom:20px;">We're hiring! Click below to fill our employment application form.</p>
+      <a href="A² EMPL.html" class="btn" style="display:block;text-align:center;">Start Application</a>
     </div>
   </div>
 </section>
