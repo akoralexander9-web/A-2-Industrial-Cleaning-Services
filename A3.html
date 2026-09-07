@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A² Industrial Cleaning Services - Above & Beyond Clean</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+  :root{
+    --navy:#0A2540;
+    --orange:#FF6A00;
+    --gray:#4A5568;
+    --light:#F7FAFC;
+  }
+  body{color:var(--gray);line-height:1.6;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  
+  header{background:var(--navy);color:white;padding:15px 0;position:sticky;top:0;z-index:1000;}
+  nav{display:flex;justify-content:space-between;align-items:center;}
+  .logo{font-size:1.8rem;font-weight:900;}
+  .logo span{color:var(--orange);}
+  nav ul{display:flex;list-style:none;gap:25px;}
+  nav a{color:white;text-decoration:none;font-weight:500;}
+  nav a:hover{color:var(--orange);}
+  
+  .hero{background:linear-gradient(rgba(10,37,64,0.85),rgba(10,37,64,0.85)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070') center/cover; color:white;padding:120px 0;text-align:center;}
+  .hero h1{font-size:3rem;margin-bottom:15px;}
+  .hero h1 span{color:var(--orange);}
+  .hero p{font-size:1.2rem;margin-bottom:30px;}
+  .btn{background:var(--orange);color:white;padding:14px 28px;border:none;border-radius:6px;font-weight:700;text-decoration:none;display:inline-block;margin:5px;cursor:pointer;}
+  .btn:hover{background:#e55f00;}
+  .btn-outline{background:transparent;border:2px solid white;}
+  
+  section{padding:80px 0;}
+  .section-title{text-align:center;font-size:2.2rem;color:var(--navy);margin-bottom:50px;}
+  
+  .services{background:var(--light);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+  .card{background:white;padding:30px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.08);border-top:4px solid var(--orange);}
+  .card h3{color:var(--navy);margin-bottom:10px;}
+  
+  .why .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+  .why-item{text-align:center;padding:20px;}
+  .why-item .icon{font-size:2.5rem;margin-bottom:10px;}
+  
+  .contact{background:var(--navy);color:white;}
+  form{display:grid;gap:15px;max-width:600px;margin:0 auto;}
+  input,textarea{padding:12px;border-radius:6px;border:none;width:100%;}
+  .contact-info{text-align:center;margin-bottom:30px;font-size:1.1rem;}
+  .contact-info a{color:var(--orange);text-decoration:none;font-weight:700;}
+  
+  footer{background:#061a2e;color:#ccc;text-align:center;padding:25px 0;}
+  
+  @media(max-width:768px){
+    .hero h1{font-size:2rem;}
+    nav ul{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">A<span>²</span> Industrial</div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>A<span>²</span> INDUSTRIAL CLEANING SERVICES</h1>
+    <p><b>Above & Beyond Clean</b></p>
+    <p>We keep factories, warehouses & plants spotless, safe, and HSE compliant.</p>
+    <a href="https://wa.me/2347031257305" class="btn">Chat on WhatsApp</a>
+    <a href="#contact" class="btn btn-outline">Get Free Quote</a>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="grid">
+      <div class="card"><h3>Heavy Industrial Cleaning</h3><p>Plants, refineries, and warehouse deep cleaning with industrial equipment.</p></div>
+      <div class="card"><h3>Floor Care & Degreasing</h3><p>Epoxy, concrete polishing, oil/grease removal for safety and compliance.</p></div>
+      <div class="card"><h3>Tank & Confined Space</h3><p>Certified team for silos, tanks, and hazardous area cleaning.</p></div>
+      <div class="card"><h3>Post-Construction Clean-up</h3><p>Debris removal and final cleaning for new industrial facilities.</p></div>
+      <div class="card"><h3>Sanitization & HSE</h3><p>Eco-friendly chemicals and full compliance with safety standards.</p></div>
+      <div class="card"><h3>24/7 Emergency Response</h3><p>Spill control and urgent cleaning, anytime, anywhere.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why">
+  <div class="container">
+    <h2 class="section-title">Why Choose A²</h2>
+    <div class="grid">
+      <div class="why-item"><div class="icon">👷</div><h3>Certified Team</h3><p>Trained, PPE-compliant professionals</p></div>
+      <div class="why-item"><div class="icon">⚙️</div><h3>Industrial Equipment</h3><p>Heavy-duty scrubbers & pressure washers</p></div>
+      <div class="why-item"><div class="icon">🌿</div><h3>Eco-Safe</h3><p>Non-toxic, biodegradable chemicals</p></div>
+      <div class="why-item"><div class="icon">📍</div><h3>Nationwide</h3><p>Based in Abuja. Serving Nigeria</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title" style="color:white;">Get a Quote</h2>
+    <div class="contact-info">
+      📞 WhatsApp: <a href="https://wa.me/2347031257305">+234 703 125 7305</a> <br>
+      📧 Email: <a href="mailto:akoralexander9@gmail.com">akoralexander9@gmail.com</a>
+    </div>
+    <form onsubmit="window.open('https://wa.me/2347031257305?text=Hello A², I need a cleaning quote for my facility.');return false;">
+      <input type="text" placeholder="Company Name" required>
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Location - e.g. Abuja" required>
+      <textarea rows="4" placeholder="Tell us about your facility and cleaning needs"></textarea>
+      <button class="btn" type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 A² Industrial Cleaning Services. Above & Beyond Clean.</p>
+    <p>Email: <a href="mailto:akoralexander9@gmail.com" style="color:var(--orange);">akoralexander9@gmail.com</a> | WhatsApp: <a href="https://wa.me/2347031257305" style="color:var(--orange);">+234 703 125 7305</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
